@@ -1,7 +1,7 @@
 # Movies 
 ## Intro
 
-This 
+This project will take movies, from 2016, look at their 'ratings' on google trends and then compare that number to the amount that the movie actually made. I got the idea for this project after reading a book entitled 'Everybody Lies'. The author argues that by looking at Google Trends and Adwords one can get a feeling for what people truly believe. I was so interested in this that I actually started to read the authors Harvard Thesis. This is my first dive into this matter and wondering what I will find!!
 
 
 
