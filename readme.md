@@ -1,9 +1,13 @@
-# Movies 
+# Movies
 ## Intro
 
-This project will take movies, from 2016, look at their 'ratings' on google trends and then compare that number to the amount that the movie actually made. I got the idea for this project after reading a book entitled 'Everybody Lies'. The author argues that by looking at Google Trends and Adwords one can get a feeling for what people truly believe. I was so interested in this that I actually started to read the authors Harvard Thesis. This is my first dive into this matter and wondering what I will find!!
+This project will take movies, from 2016, look at their 'ratings' on google trends and then compare that number to the amount that the movie actually made. I got the idea for this project after reading a book entitled 'Everybody Lies'. The author argues that by looking at Google Trends and Adwords one can get a feeling for what people truly believe. I was so interested in this that I actually started to read the authors Harvard Thesis. This is my first dive into this matter and wondering what I will find.
 
-
+This project will use the following method. First I collect data about movies
+that came out in 2016. I then find the amount of money that those movies grossed
+while they were out. From there I use Google trends and find the movies 'average
+search rating' was from the day it came out to the previous year. I then will
+combine the search rating with the amount that the movie made and plot that.
 
 # Getting started
 ### Installing
