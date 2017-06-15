@@ -8,11 +8,42 @@ from bs4 import BeautifulSoup
 
 class Data():
 
-    def __init__(self):
-        self.__data = pd.read_csv('movie.csv')
+    # def __init__(self):
+    #     self.__data = pd.read_csv('trends/arrival.csv')
 
-    def show(self):
-        print(self.__data.head())
+    def get_mean(self):
+        #Creating the two lists which will hold my data
+        score_list = [] #To hold the mean scores from google
+        earnings_list = [] #To hold the amount of money each movie made
+        #a count variable
+        count = 0
+        #This list will hold all of the movies being examined I will loop
+        #through this list to pull data.
+        movies = ['zootopia','lalaland','arrival' ]
+        #Starting a loop
+        for movie in movies:
+            #Pulling each specific CSV file to get google trends data
+            data_trends = pd.read_csv('trends/'+movie+'.csv')
+            #setting up the variable to hold the csv file containing info on
+            #how much each movie made.
+            data_money = pd.read_csv('movie.csv')
+            #capitalize the first letter of the movie name.
+            movie = movie.capitalize()
+            #I then use that movie name to pull the mean from a specific column
+            mean = data_trends[movie].mean()
+            #I append that information to the scores list
+            score_list.append(mean)
+            #I now look at the money csv file and pull each data point out.
+            earnings = data_money.iloc[count][1]
+            #I append the amount of money each movie made to the earnings_list
+            earnings_list.append(earnings)
+            #I increase the count by one. 
+            count += 1
+        print(score_list)
+        print(earnings_list)
+        # print(int(earnings_list[0]) + int(earnings_list[1]))
+
+
 
 data = Data()
-data.show()
+data.get_mean()
