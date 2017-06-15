@@ -2,6 +2,7 @@
 
 #importing libraries to use with this file
 import numpy as np
+import matplotlib.pyplot as plt
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
@@ -37,11 +38,14 @@ class Data():
             earnings = data_money.iloc[count][1]
             #I append the amount of money each movie made to the earnings_list
             earnings_list.append(earnings)
-            #I increase the count by one. 
+            #I increase the count by one.
             count += 1
         print(score_list)
         print(earnings_list)
+        plt.scatter(score_list, earnings_list)
+        plt.show()
         # print(int(earnings_list[0]) + int(earnings_list[1]))
+
 
 
 
