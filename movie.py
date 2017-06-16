@@ -20,7 +20,7 @@ class Data():
         count = 0
         #This list will hold all of the movies being examined I will loop
         #through this list to pull data.
-        movies = ['zootopia','lalaland','arrival' ]
+        movies = ['zootopia','lalaland','arrival', 'manchesterbythesea', 'captainamerica', 'rogueone','deadpool', 'doctorstrange', 'findingdory', 'junglebook', 'suicidesquad','batman', 'Secretlifeofpets', 'hacksawridge', 'fantasticbeast', 'startrek', 'moana' ]
         #Starting a loop
         for movie in movies:
             #Pulling each specific CSV file to get google trends data
@@ -40,8 +40,12 @@ class Data():
             earnings_list.append(earnings)
             #I increase the count by one.
             count += 1
-        print(score_list)
-        print(earnings_list)
+        # print(score_list)
+        # print(earnings_list)
+        plt.title("Google data compared to Earnings", fontsize=16)
+        plt.xlabel("Google Trends Mean Data", fontsize=14)
+        plt.ylabel("Earnings", fontsize=14)
+        plt.axis([4, 22, 50000000, 600000000])
         plt.scatter(score_list, earnings_list)
         plt.show()
         # print(int(earnings_list[0]) + int(earnings_list[1]))
