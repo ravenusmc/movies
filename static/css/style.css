@@ -1,0 +1,22 @@
+
+
+/* CSS for Login Page */
+.page_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    background-image: url(https://source.unsplash.com/23LET4Hxj_U);
+    height: 675px;
+    width: 575px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
