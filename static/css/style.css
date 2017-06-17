@@ -5,8 +5,10 @@
 
 /* CSS for Login Page */
 .page_container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .image {
@@ -28,5 +30,13 @@
 }
 
 form {
-    border: 2px solid black;
+    border: 2px solid #333;
+    background-color: #F27C0E;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #1A7DD4;
+}
+
+.input_fix {
+    margin-left: 3px;
 }
