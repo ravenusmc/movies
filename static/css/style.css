@@ -11,6 +11,10 @@
     flex-wrap: wrap;
 }
 
+.box {
+    min-width: 350px;
+}
+
 .image {
     background-image: url(https://source.unsplash.com/23LET4Hxj_U);
     flex: 5;
@@ -31,10 +35,9 @@
 
 form {
     border: 2px solid #333;
-    background-color: #F27C0E;
     border-radius: 5px;
     padding: 10px;
-    background-color: #1A7DD4;
+    background-color: #ED881D;
 }
 
 .input_fix {
