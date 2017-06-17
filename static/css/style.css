@@ -1,4 +1,7 @@
-
+/* Generic CSS */
+.center {
+    text-align: center;
+}
 
 /* CSS for Login Page */
 .page_container {
@@ -8,15 +11,22 @@
 
 .image {
     background-image: url(https://source.unsplash.com/23LET4Hxj_U);
-    height: 675px;
-    width: 575px;
+    flex: 5;
+    height: 650px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .login_form {
+    flex: 5;
+    height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+form {
+    border: 2px solid black;
 }
