@@ -47,6 +47,20 @@ def signup():
         return redirect(url_for('home'))
     return render_template('sign_in.html', title='sign_in')
 
+#This function will bring the user to the home page
+@app.route('/home')
+def home():
+    if 'username' not in session:
+        return redirect(url_for('login'))
+    return render_template('home.html', title='Home Page')
+
+#This function is what will log out the user.
+@app.route('/sign_out')
+def logout():
+    # remove the username from the session if it's there
+    session.pop('username', None)
+    return redirect(url_for('login'))
+
 
 # set the secret key. keep this really secret:
 app.secret_key = 'n3A\xef(\xb0Cf^\xda\xf7\x97\xb1x\x8e\x94\xd5r\xe0\x11\x88\x1b\xb9'
