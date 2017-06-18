@@ -2,22 +2,18 @@
 
 {% block body %}
 
-<div class='page_container'>
+<div class='main_body_container'>
 
-    <div class='box image'>
-    </div>
-
-    <div class='box login_form'>
-        <h1>Movie Data</h1>
-        <h4>Using Google Trends to learn about movies</h4>
+    <div class='box sign_up_form'>
         <form onsubmit='return validateForm();' method="POST">
             <h1 class='center'>Login</h1>
             <p>Username: <input size=20 name='username' type='text'/></p>
             <p class='input_fix '>Password: <input size=20 name='password' type='password'/></p>
             <button><a href='/'>Login</a></button>
-            <!-- <input type='submit'/> -->
             <button><a href='/sign_up'>Sign Up</a></button>
         </form>
+    </div>
+    <div class='box sign_up_image'>
     </div>
 
 </div>
