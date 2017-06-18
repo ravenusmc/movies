@@ -43,10 +43,18 @@ form {
     border-radius: 5px;
     padding: 10px;
     background-color: #3F9CFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.input_fix {
-    margin-left: 3px;
+.title_fix {
+    margin-top: -15px;
+}
+
+.pass_fix {
+    margin-top: -5px;
 }
 
 /* CSS for Sign Up Page */

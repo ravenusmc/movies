@@ -9,14 +9,15 @@
 
     <div class='box login_form'>
         <h1>Movie Data</h1>
-        <h4>Using Google Trends to learn about movies</h4>
+        <h4 class='title_fix'>Using Google Trends to learn about movies</h4>
         <form method="POST">
             <h1 class='center'>Login</h1>
-            <p>Username: <input size=20 name='username' type='text'/></p>
-            <p class='input_fix '>Password: <input size=20 name='password' type='password'/></p>
-            <button onClick='return validateForm();' ><a href='/'>Login</a></button>
-            <button><a href='/sign_up'>Sign Up</a></button>
-            <!-- <input type='submit'/> -->
+            <p class='title_fix'>Username: <input size=20 name='username' type='text'/></p>
+            <p class='pass_fix'>Password: <input size=20 name='password' type='password'/></p>
+            <div>
+                <button onClick='return validateForm();' ><a href='/'>Login</a></button>
+                <button><a href='/sign_up'>Sign Up</a></button>
+            </div>
         </form>
 
     </div>
