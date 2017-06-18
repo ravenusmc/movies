@@ -2,9 +2,51 @@
 
 {% block body %}
 
-<h1>Home</h1>
+<nav>
+    <ul>
+        <li><a href='/sign_out'>Sign Out</a></li>
+    </ul>
+</nav>
 
-<li><a href='/sign_out'>Sign Out</a></li>
+<header>
+    <h1 class='center'>The Study</h1>
+</header>
+
+<main>
+
+    <div class="study_area">
+        <div class='study_box_area area_s'>
+            <h2>Background on the Study</h2>
+            <p class='background_para'>
+                This goal of this study was to see if there was a correlation between
+                Google trends data and the amount of money that a movie made. The idea
+                for this project came to me after reading Everybody Lies. In that
+                book the author uses data from Google Trends to examine human
+                behvaior. Thus, I wanted to see if there would be any correlation
+                with movies and Google Trends.
+            </p>
+        </div>
+
+        <div class='study_box_area area_s'>
+            <h2>Methods Used</h2>
+            <div class='background_para'>
+                <ul>
+                    <li>Gather Data on how much a 2016 movie made.</li>
+                    <li>Use Google Trends data on the movie released. Take data from
+                        the point that the movie was released to one year before hand.</li>
+                    <li>Get the mean of the Google Trends data for the past year.</li>
+                    <li>Create scatter plot of data for using Trends data as X axis and
+                        amount movie made as Y axis.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h1 class='center'>The Results</h1>
+
+
+</main>
+
 
 
 {% endblock %}

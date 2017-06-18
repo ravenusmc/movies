@@ -80,3 +80,53 @@ form {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+/* CSS For Home Page */
+nav {
+    border-radius: 10px;
+    background-color: #3F9CFA;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav ul {
+    text-align: right;
+    text-transform: uppercase;
+}
+
+nav ul li {
+    display: inline;
+    padding-right: 50px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #333;
+}
+
+.study_area {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.study_box_area {
+    min-width: 350px
+}
+
+
+.area_s {
+    /*border: 2px solid black;*/
+    height: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background_para {
+    margin-left: 10%;
+    margin-right: 10%;
+}
