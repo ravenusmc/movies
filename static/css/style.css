@@ -104,6 +104,10 @@ nav ul a {
     color: #333;
 }
 
+nav ul a:hover {
+    color: yellow;
+}
+
 .study_area {
     margin-top: 15px;
     display: flex;
