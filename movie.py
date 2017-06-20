@@ -44,7 +44,7 @@ class Data():
         # print(earnings_list)
         plt.title("Google data compared to Earnings", fontsize=16)
         plt.xlabel("Google Trends Mean Data", fontsize=14)
-        plt.ylabel("Earnings", fontsize=14)
+        plt.ylabel("Earnings (in hundreds of millions of dollars)", fontsize=14)
         plt.axis([4, 22, 50000000, 600000000])
         plt.scatter(score_list, earnings_list)
         plt.show()
