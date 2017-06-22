@@ -24,7 +24,7 @@ class Data():
         #Starting a loop
         for movie in movies:
             #Pulling each specific CSV file to get google trends data
-            data_trends = pd.read_csv('trends/one_month/'+movie+'.csv')
+            data_trends = pd.read_csv('trends/three_months/'+movie+'.csv')
             #setting up the variable to hold the csv file containing info on
             #how much each movie made.
             data_money = pd.read_csv('movie.csv')
