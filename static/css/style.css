@@ -110,6 +110,7 @@ nav ul a:hover {
 
 .study_area {
     margin-top: 15px;
+    margin-bottom: 55px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -122,7 +123,6 @@ nav ul a:hover {
 
 
 .area_s {
-    /*border: 2px solid black;*/
     height: 300px;
     width: 500px;
     display: flex;
@@ -133,4 +133,23 @@ nav ul a:hover {
 .background_para {
     margin-left: 10%;
     margin-right: 10%;
+    background-color: #3F9CFA;
+    padding: 10px;
+    border-radius: 10px;
 }
+
+.small_screen_message {
+    display: none;
+}
+
+@media only all and (max-width: 700px){
+
+    .small_screen_message {
+        display: inline;
+    }
+
+    img {
+        display: none;
+    }
+}
+
