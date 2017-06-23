@@ -4,14 +4,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-import requests
-from bs4 import BeautifulSoup
 
+
+
+#This class will be used to create the plots from the data that I have. I do think that this class is over kill
+#but I like to use classes more and more-I guess to help keep my data well organized. 
 class Data():
 
-    # def __init__(self):
-    #     self.__data = pd.read_csv('trends/arrival.csv')
-
+    #This method is what will actually create the graph. 
     def get_mean(self):
         #Creating the two lists which will hold my data
         score_list = [] #To hold the mean scores from google
@@ -23,7 +23,7 @@ class Data():
         movies = ['zootopia','lalaland','arrival', 'manchesterbythesea', 'captainamerica', 'rogueone','deadpool', 'doctorstrange', 'findingdory', 'junglebook', 'suicidesquad','batman', 'Secretlifeofpets', 'hacksawridge', 'fantasticbeast', 'startrek', 'moana' ]
         #Starting a loop
         for movie in movies:
-            #Pulling each specific CSV file to get google trends data
+            #Pulling each specific CSV file to get google trends data.
             data_trends = pd.read_csv('trends/three_months/'+movie+'.csv')
             #setting up the variable to hold the csv file containing info on
             #how much each movie made.
@@ -40,18 +40,12 @@ class Data():
             earnings_list.append(earnings)
             #I increase the count by one.
             count += 1
-        # print(score_list)
-        # print(earnings_list)
         plt.title("Google data compared to Earnings", fontsize=16)
         plt.xlabel("Google Trends Mean Data", fontsize=14)
         plt.ylabel("Earnings (in hundreds of millions of dollars)", fontsize=14)
         plt.axis([4, 22, 50000000, 600000000])
         plt.scatter(score_list, earnings_list)
         plt.show()
-        # print(int(earnings_list[0]) + int(earnings_list[1]))
-
-
-
 
 data = Data()
 data.get_mean()
