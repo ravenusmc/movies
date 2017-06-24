@@ -24,7 +24,7 @@ class Data():
         #Starting a loop
         for movie in movies:
             #Pulling each specific CSV file to get google trends data.
-            data_trends = pd.read_csv('trends/three_months/'+movie+'.csv')
+            data_trends = pd.read_csv('trends/one_month/'+movie+'.csv')
             #setting up the variable to hold the csv file containing info on
             #how much each movie made.
             data_money = pd.read_csv('movie.csv')
@@ -43,7 +43,10 @@ class Data():
         plt.title("Google data compared to Earnings", fontsize=16)
         plt.xlabel("Google Trends Mean Data", fontsize=14)
         plt.ylabel("Earnings (in hundreds of millions of dollars)", fontsize=14)
-        plt.axis([4, 22, 50000000, 600000000])
+        #axis is set to 22 for everything but one month
+        # plt.axis([4, 22, 50000000, 600000000])
+        #To build the one month graph I set the x axis out to 38. 
+        plt.axis([4, 38, 50000000, 600000000])
         plt.scatter(score_list, earnings_list)
         plt.show()
 
