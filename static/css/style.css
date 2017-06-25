@@ -108,6 +108,16 @@ nav ul a:hover {
     color: yellow;
 }
 
+.sign_out_button {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sign_out_button:hover {
+    background-color: yellow;
+    color: #333;
+}
+
 .study_area {
     margin-top: 15px;
     margin-bottom: 55px;
