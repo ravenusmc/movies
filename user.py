@@ -2,6 +2,7 @@
 import bcrypt
 from bson.son import SON
 import mysql.connector
+#import pymysql
 
 class User():
 
@@ -9,7 +10,7 @@ class User():
         self.conn = mysql.connector.connect(user='ted',
                                 password='pass',
                                 host='localhost',
-                                port=3307,
+                                port=3306,
                                 database='movies')
         self.cursor = self.conn.cursor()
 
@@ -25,10 +26,12 @@ class User():
         self.cursor.execute(query, (username,))
         row = self.cursor.fetchone()
         if str(row) == 'None':
+            print(row)
             flag = False
         #If the user is found, then another check is done to see if the hidden
         #password matches the original one.
         else:
+            print(row)
             #Setting the hashed variable to be used in the conditional statement.
             hashed = row[1].encode('utf-8') #This will return the hashed password from the table.
             if bcrypt.hashpw(password, hashed) == hashed:

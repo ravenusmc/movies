@@ -6,9 +6,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 
-
-
-
 #This class will be used to create the plots from the data that I have. I do think that this class is over kill
 #but I like to use classes more and more-I guess to help keep my data well organized. 
 class Data():
